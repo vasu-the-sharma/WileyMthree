@@ -23,12 +23,11 @@ public class myLinkedList {
      if (list.head == null) {
          list.head = new_node;
      }
-     else {
+     else{
          Node last = list.head;
          while (last.next != null) {
              last = last.next;
          }
-
          last.next = new_node;
      }
 
@@ -38,7 +37,7 @@ public class myLinkedList {
  public static void print(myLinkedList list)
  {
      Node curr = list.head;
-     System.out.println("My LinkedList Implementation:");
+     System.out.println("My LinkedList Implementation: ");
  
      while (curr!=null) {
          System.out.print(curr.data + " ");
